@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content-box {
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+        .dynamic-element {
+            background-color: #f0f0f0;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            cursor: pointer;
+            padding: 8px 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="mainHeading">DOM Manipulation Demo</h1>
+    </header>
+    
+    <main>
+        <section class="content-box">
+            <p id="changeableText">Initial text content</p>
+            <button onclick="changeText()">Change Text</button>
+        </section>
+
+        <section class="content-box">
+            <div id="styleTarget">Hover over me!</div>
+            <button onclick="toggleStyles()">Toggle Styles</button>
+        </section>
+
+        <section class="content-box">
+            <div id="elementContainer"></div>
+            <button onclick="addElement()">Add Element</button>
+            <button onclick="removeElement()">Remove Element</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
