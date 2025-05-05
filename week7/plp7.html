@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Demo</title>
+    <link rel="stylesheet" href="plp7.css">
+</head>
+<body>
+    <!-- Event Handling Section -->
+    <section class="event-section">
+        <h2>Event Handling</h2>
+        <button id="clickBtn">Click Me (0)</button>
+        <div class="hover-box" id="hoverBox"></div>
+        <p>Last Key Pressed: <span id="lastKey"></span></p>
+        <p id="revealTrigger">Double-click here for a secret!</p>
+        <p id="secretMessage" style="display: none;">🎉 You found the secret!</p>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section>
+        <h2>Interactive Elements</h2>
+        <div class="gallery">
+            <img src="https://picsum.photos/200/301" alt="Image 1">
+            <img src="https://picsum.photos/200/302" alt="Image 2">
+            <img src="https://picsum.photos/200/303" alt="Image 3">
+        </div>
+
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="tab1" role="tab">Tab 1</button>
+                <button class="tab-btn" data-tab="tab2" role="tab">Tab 2</button>
+            </div>
+            <div class="tab-content active" id="tab1" role="tabpanel">Content for Tab 1</div>
+            <div class="tab-content" id="tab2" role="tabpanel">Content for Tab 2</div>
+        </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+        <h2>Form Validation</h2>
+        <form id="demoForm" novalidate>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name" required>
+                <div class="error" id="nameError">Name is required</div>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+                <div class="error" id="emailError">Invalid email format</div>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required minlength="8">
+                <div class="error" id="passError">Minimum 8 characters</div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="plp7.js"></script>
+</body>
+</html>
